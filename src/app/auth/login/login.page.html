@@ -1,0 +1,32 @@
+
+
+<ion-content>
+<ion-list>
+  <ion-item>
+
+    <ion-label>
+<ion-icon name="person">
+</ion-icon>
+</ion-label>
+<ion-input type="text" placeholder="ingrese su usuario" [(ngModel)]="user"></ion-input>
+
+  </ion-item>
+  <ion-item>
+
+    <ion-label>
+      <ion-icon name="lock">
+      </ion-icon>
+      </ion-label>
+      <ion-input type="password" placeholder="ingrese su contraseña" [(ngModel)]="pass"></ion-input>
+
+  </ion-item>
+
+  <div class="ion-padding btn-center-aling">
+    <ion-button shape="round" color="primary" (click)="signIn()" routerLink="/home">Iniciar sesion</ion-button>
+    <!--<ion-button shape="round" color="primary">Iniciar sesion</ion-button>-->
+    <br>
+    <a routerLink="/forget">olvide mi contraseña</a>
+  </div>
+
+</ion-list>
+</ion-content>
